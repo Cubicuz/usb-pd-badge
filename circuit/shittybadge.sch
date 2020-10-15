@@ -46,10 +46,6 @@ F 3 "~" H 950 2100 50  0001 C CNN
 	1    800  2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1100 2150 1350 2150
-Wire Wire Line
-	1100 2250 1250 2250
 $Comp
 L power:GND #PWR0101
 U 1 1 5F555D3A
@@ -133,8 +129,6 @@ Wire Wire Line
 	700  1250 1300 1250
 Wire Wire Line
 	1300 1250 1300 2050
-Wire Wire Line
-	1300 2050 1450 2050
 Connection ~ 700  1250
 Wire Wire Line
 	1100 1750 1100 950 
@@ -163,15 +157,6 @@ F 3 "" H 1350 2700 50  0001 C CNN
 	1    1350 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 2300 1350 2150
-Connection ~ 1350 2150
-Wire Wire Line
-	1250 2300 1250 2250
-Connection ~ 1250 2250
-Wire Wire Line
-	1450 2300 1450 2050
-Connection ~ 1450 2050
 Wire Wire Line
 	6350 1850 6600 1850
 Wire Wire Line
@@ -223,12 +208,6 @@ F 3 "~" H 1800 1600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1100 1750 1450 1750
-Wire Wire Line
-	1450 2050 2150 2050
-Wire Wire Line
-	1350 2150 2150 2150
-Wire Wire Line
-	1250 2250 2150 2250
 Wire Wire Line
 	3350 1450 3550 1450
 Wire Wire Line
@@ -344,12 +323,12 @@ $EndComp
 $Comp
 L power:GND #PWR0113
 U 1 1 5F5AC235
-P 6850 2650
-F 0 "#PWR0113" H 6850 2400 50  0001 C CNN
-F 1 "GND" H 6855 2477 50  0000 C CNN
-F 2 "" H 6850 2650 50  0001 C CNN
-F 3 "" H 6850 2650 50  0001 C CNN
-	1    6850 2650
+P 6850 2950
+F 0 "#PWR0113" H 6850 2700 50  0001 C CNN
+F 1 "GND" H 6850 2800 50  0000 C CNN
+F 2 "" H 6850 2950 50  0001 C CNN
+F 3 "" H 6850 2950 50  0001 C CNN
+	1    6850 2950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -734,12 +713,9 @@ F 3 "~" H 6400 5900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6350 1750 6850 1750
+	6350 1750 6450 1750
 Wire Wire Line
 	6350 2650 6850 2650
-Wire Wire Line
-	6850 2150 6850 2650
-Connection ~ 6850 2650
 $Comp
 L Device:R R12
 U 1 1 5F64E418
@@ -1196,24 +1172,23 @@ Wire Wire Line
 $Comp
 L mykicadsymbols:pts647 S1
 U 1 1 5F6F87A0
-P 6950 1950
-F 0 "S1" V 6996 1806 50  0000 R CNN
-F 1 "pts647" V 6905 1806 50  0000 R CNN
-F 2 "mylibrary:pts647" H 7150 2150 50  0001 L CNN
-F 3 "http://spec_sheets.e-switch.com/specs/29-KS01Q01.pdf" H 7150 2250 60  0001 L CNN
-F 4 "EG4791-ND" H 7150 2350 60  0001 L CNN "Digi-Key_PN"
-F 5 "KS-01Q-01" H 7150 2450 60  0001 L CNN "MPN"
-F 6 "Switches" H 7150 2550 60  0001 L CNN "Category"
-F 7 "Pushbutton Switches" H 7150 2650 60  0001 L CNN "Family"
-F 8 "http://spec_sheets.e-switch.com/specs/29-KS01Q01.pdf" H 7150 2750 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/e-switch/KS-01Q-01/EG4791-ND/2116270" H 7150 2850 60  0001 L CNN "DK_Detail_Page"
-F 10 "SWITCH PUSH SPST-NO 0.01A 35V" H 7150 2950 60  0001 L CNN "Description"
-F 11 "E-Switch" H 7150 3050 60  0001 L CNN "Manufacturer"
-F 12 "Obsolete NonStock" H 7150 3150 60  0001 L CNN "Status"
-	1    6950 1950
+P 7450 1150
+F 0 "S1" V 7496 1006 50  0000 R CNN
+F 1 "pts647" V 7405 1006 50  0000 R CNN
+F 2 "mylibrary:pts647" H 7650 1350 50  0001 L CNN
+F 3 "http://spec_sheets.e-switch.com/specs/29-KS01Q01.pdf" H 7650 1450 60  0001 L CNN
+F 4 "EG4791-ND" H 7650 1550 60  0001 L CNN "Digi-Key_PN"
+F 5 "KS-01Q-01" H 7650 1650 60  0001 L CNN "MPN"
+F 6 "Switches" H 7650 1750 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 7650 1850 60  0001 L CNN "Family"
+F 8 "http://spec_sheets.e-switch.com/specs/29-KS01Q01.pdf" H 7650 1950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/e-switch/KS-01Q-01/EG4791-ND/2116270" H 7650 2050 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSH SPST-NO 0.01A 35V" H 7650 2150 60  0001 L CNN "Description"
+F 11 "E-Switch" H 7650 2250 60  0001 L CNN "Manufacturer"
+F 12 "Obsolete NonStock" H 7650 2350 60  0001 L CNN "Status"
+	1    7450 1150
 	0    -1   -1   0   
 $EndComp
-Connection ~ 6850 1750
 $Comp
 L power:VBUS #PWR0144
 U 1 1 5F6DA86D
@@ -1281,4 +1256,127 @@ F 3 "" H 8550 2300 50  0001 C CNN
 	1    8550 2100
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	3350 1750 4100 1750
+Wire Wire Line
+	4100 1750 4100 1250
+Wire Wire Line
+	4100 1250 6450 1250
+Wire Wire Line
+	6450 1250 6450 1750
+Connection ~ 6450 1750
+Wire Wire Line
+	6450 1750 6850 1750
+Wire Wire Line
+	3350 1350 5150 1350
+Wire Wire Line
+	5150 1350 5150 1550
+$Comp
+L Device:R R14
+U 1 1 5F7B99DC
+P 6850 2800
+F 0 "R14" H 6920 2846 50  0000 L CNN
+F 1 "10k" H 6920 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6780 2800 50  0001 C CNN
+F 3 "~" H 6850 2800 50  0001 C CNN
+	1    6850 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5F7C36C9
+P 5000 1550
+F 0 "R13" H 5070 1596 50  0000 L CNN
+F 1 "10k" H 5070 1505 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4930 1550 50  0001 C CNN
+F 3 "~" H 5000 1550 50  0001 C CNN
+	1    5000 1550
+	0    1    1    0   
+$EndComp
+Connection ~ 5150 1550
+Wire Wire Line
+	5150 1550 5150 1750
+$Comp
+L power:+3V3 #PWR0146
+U 1 1 5F7C3C82
+P 4850 1550
+F 0 "#PWR0146" H 4850 1400 50  0001 C CNN
+F 1 "+3V3" H 4850 1700 50  0000 C CNN
+F 2 "" H 4850 1550 50  0001 C CNN
+F 3 "" H 4850 1550 50  0001 C CNN
+	1    4850 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mykicadsymbols:pts647 S2
+U 1 1 5F7E9CF7
+P 8000 1150
+F 0 "S2" V 8046 1006 50  0000 R CNN
+F 1 "pts647" V 7955 1006 50  0000 R CNN
+F 2 "mylibrary:pts647" H 8200 1350 50  0001 L CNN
+F 3 "http://spec_sheets.e-switch.com/specs/29-KS01Q01.pdf" H 8200 1450 60  0001 L CNN
+F 4 "EG4791-ND" H 8200 1550 60  0001 L CNN "Digi-Key_PN"
+F 5 "KS-01Q-01" H 8200 1650 60  0001 L CNN "MPN"
+F 6 "Switches" H 8200 1750 60  0001 L CNN "Category"
+F 7 "Pushbutton Switches" H 8200 1850 60  0001 L CNN "Family"
+F 8 "http://spec_sheets.e-switch.com/specs/29-KS01Q01.pdf" H 8200 1950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/e-switch/KS-01Q-01/EG4791-ND/2116270" H 8200 2050 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH PUSH SPST-NO 0.01A 35V" H 8200 2150 60  0001 L CNN "Description"
+F 11 "E-Switch" H 8200 2250 60  0001 L CNN "Manufacturer"
+F 12 "Obsolete NonStock" H 8200 2350 60  0001 L CNN "Status"
+	1    8000 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 1750 7350 1750
+Wire Wire Line
+	7350 1750 7350 1350
+Connection ~ 6850 1750
+Wire Wire Line
+	6350 1950 7900 1950
+Wire Wire Line
+	7900 1950 7900 1350
+$Comp
+L power:GND #PWR0147
+U 1 1 5F7F8E38
+P 7350 950
+F 0 "#PWR0147" H 7350 700 50  0001 C CNN
+F 1 "GND" H 7350 800 50  0000 C CNN
+F 2 "" H 7350 950 50  0001 C CNN
+F 3 "" H 7350 950 50  0001 C CNN
+	1    7350 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0148
+U 1 1 5F7F956A
+P 7900 950
+F 0 "#PWR0148" H 7900 700 50  0001 C CNN
+F 1 "GND" H 7900 800 50  0000 C CNN
+F 2 "" H 7900 950 50  0001 C CNN
+F 3 "" H 7900 950 50  0001 C CNN
+	1    7900 950 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 2050 2150 2050
+Wire Wire Line
+	1450 2300 1450 1950
+Wire Wire Line
+	1450 1950 1100 1950
+Connection ~ 1100 1950
+Wire Wire Line
+	1100 2250 1350 2250
+Wire Wire Line
+	1100 2150 1250 2150
+Wire Wire Line
+	1250 2300 1250 2150
+Connection ~ 1250 2150
+Wire Wire Line
+	1250 2150 2150 2150
+Wire Wire Line
+	1350 2300 1350 2250
+Connection ~ 1350 2250
+Wire Wire Line
+	1350 2250 2150 2250
 $EndSCHEMATC
